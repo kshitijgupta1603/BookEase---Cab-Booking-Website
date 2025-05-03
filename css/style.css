@@ -1,0 +1,177 @@
+body{
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    font-family: "Exo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+.car-logo{
+    height: 80px;
+}
+.nav-text{
+    text-align: end;
+}
+
+.container-fluid{
+    height: 70px;
+}
+.head{
+    background: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+} 
+.slider_form{
+    width: 400px;
+    border-radius: 10px;
+}
+.btnn{
+    width: 100%;
+}
+.taxi-img{
+    height: 300px;
+    margin-top: 35%;
+}
+.car-btn{
+    text-align: center;
+}
+.btn-car{
+    border-radius: 20px;
+    padding: 10px;
+    width: 150px;
+    height: 45px;
+    margin: 10px 50px;
+    margin-top: 30px;
+    border: none;
+    font-weight: 800;
+    color: #0b041b;
+    background: rgb(224, 241, 31);
+    cursor: pointer;
+    box-shadow: 0 0 10px 2px black;  
+}
+.btn-car:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+.car-img{
+    display: block;
+    margin: 30px auto;
+    height: 300px;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card{
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+    margin: 10px;
+}
+.card-icon{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+.card-head{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.section{
+    margin-top: 100px;
+}
+.section-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin: 40px 0px;
+    font-size: 18px;
+}
+.section-content-r{
+    margin-left: -400px;
+}
+.ph-img{
+    height: 450px;
+    margin-right: 300px;
+}
+.steps-icon{
+    height: 60px;
+    background-color: black;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+
+/*<!--footercode---->*/
+.footer{
+    background-color: black;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 100px;
+
+}
+.main-footer{
+    align-items: center;
+    justify-content: space-between
+}
+
+.soci-logo{
+    height: 40px;
+    padding-right: 20px;
+}
+.mid-footer{
+    display: grid;
+    align-items: center;
+    padding-top: 80px;
+}
+.useful-links{
+    display: flex;
+    justify-content:space-between ;
+    color: #e5e5e5;
+    text-decoration: none;
+    margin-top: 20px;
+}
+.page-links{
+    color: #e5e5e5;
+    font-size: large;
+    text-align: center ;
+}
+.copy-right{
+    color: white;
+}
+.right-footer{
+    color: white;
+}
+.msg-heading{
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width:600px) {
+    .head{
+        display: block;
+        height: 1000px;
+    }
+    .taxi-img{
+        height: 200px;
+        margin-top: 20px;
+    }
+    .ph-img{
+        display: block;
+    }
+    .section-content-r{
+        margin-top: 100%;
+        margin: 0 auto;
+    }
+}
+  

@@ -1,0 +1,200 @@
+body{
+    background-color: #000000;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 209, 67, 1) 0%, rgba(255, 145, 83, 1) 90%);
+}
+.top-heading{
+    text-align: center;
+    color: #e5e5e5;
+}
+.sec-text{
+    text-align: center;
+    font-size: large;
+    font-weight: 600
+}
+.top-container{
+    display: flex;
+    direction:  row;
+    justify-content: space-evenly;
+}
+.download-step{
+    font-size:  larger;
+    padding-top: 25px;
+    color: black;
+}
+.about-container{
+    margin-top: 90px;
+}
+
+.playstore-img{
+    height: 100px;
+  margin-bottom: 20px;
+
+}
+.vehicle-container{
+    display: flex;
+    direction: row;
+    justify-content: space-evenly;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+}
+.car-img{
+    height: 200px;
+    width: 280px;
+    padding: 20px;
+}
+.card{
+    box-shadow: 0 0 10px rgba(0, 0,0,1.2);
+    border-radius: 10px;
+    padding: 5px;
+    transform: scale(1);
+    background-color: white;
+    border: none;
+    height: 350px;
+    width: 300px;
+    display: flex;
+    align-items: flex-start;
+    align-items: stretch;
+}
+.card:hover{
+    transition: 1s;
+    transform: scale(1.2) ;
+}
+.card-heading{
+    font-size: large;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    align-items: flex-start;
+
+}
+.top-heading-1{
+    text-align: center;
+    color: #e5e5e5;
+    padding: 50px;
+}
+.info-container{
+    display: flex;
+    direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 10px 200px;
+    align-items: stretch;
+}
+.info-img{
+    height: 70px;
+}
+.info-card{
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+    background-color:  #e5e5e5;
+    border-radius: 50px;
+    padding: 30px;
+
+}
+.info-hum{
+    font-size: xx-large;
+}
+.min-info{
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.main-info{
+    font-size: small;
+    color: gray;
+    font-family: sans-serif;
+    margin-top: -10px
+}
+.info-card-1{
+    text-align: center;
+    width: 300px;
+    margin: 10px;
+    padding-left: 110px;
+    background-color:  #e5e5e5;
+    align-items: flex-start;
+    padding: 50px ;
+    border-radius: 50px;
+}
+.info-img-1{
+    height: 100px;
+}
+
+/*<!--footercode---->*/
+.footer{
+    background-color: black;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 100px;
+
+}
+.main-footer{
+    align-items: center;
+    justify-content: space-between
+}
+
+.soci-logo{
+    height: 40px;
+    padding-right: 20px;
+}
+.mid-footer{
+    display: grid;
+    align-items: center;
+    padding-top: 80px;
+}
+.useful-links{
+    display: flex;
+    justify-content:space-between ;
+    color: #e5e5e5;
+    text-decoration: none;
+}
+.page-links{
+    color: #e5e5e5;
+    font-size: large;
+    text-align: center ;
+}
+.copy-right{
+    color: white;
+}
+.right-footer{
+    color: white;
+}
+.msg-heading{
+    padding-top: 120px;
+    padding-bottom: 30px;
+}
+@media only screen and (max-width: 768px) {
+    .top-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vehicle-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 90%;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .card {
+        width: 80%;
+        transform: scale(1);
+        margin-top: 20px;
+    }
+    .car:hover{
+        transform: scale(1.001);
+
+    }
+
+    .info-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+}
