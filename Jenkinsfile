@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-    IMAGE_NAME = 'your-dockerhub-username/websiteclone'  // Change this!
+    IMAGE_NAME = 'your-dockerhub-cab/websiteclone'  // Change this!
     CONTAINER_NAME = 'websiteclone-container'
   }
 
