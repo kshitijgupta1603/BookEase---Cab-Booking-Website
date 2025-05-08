@@ -1,32 +1,49 @@
 pipeline {
-    agent any
+  agent any
 
-    stages {
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/kshitijgupta1603/BookEase---Cab-Booking-Website.git'
-            }
-        }
+  environment {
+    IMAGE_NAME = 'your-dockerhub-username/websiteclone'  // Change this!
+    CONTAINER_NAME = 'websiteclone-container'
+  }
 
-        stage('Install Dependencies') {
-            steps {
-                bat 'npm install'
-            }
-        }
-
-        stage('Build App') {
-            steps {
-                bat 'npm run build'
-            }
-        }
+  stages {
+    stage('Checkout Code') {
+      steps {
+        git branch: 'main', url: 'https://github.com/kshitijgupta1603/Humankind.git' // Change this!
+      }
     }
 
-    post {
-        success {
-            echo 'Build successful. Files are in the dist/ directory.'
+    stage('Build Docker Image') {
+      steps {
+        script {
+          docker.build(IMAGE_NAME)
         }
-        failure {
-            echo 'Build failed.'
-        }
+      }
     }
+
+    stage('Stop & Remove Old Container') {
+      steps {
+        script {
+          bat "docker rm -f ${CONTAINER_NAME} || echo 'No existing container'"
+        }
+      }
+    }
+
+    stage('Run New Container') {
+      steps {
+        script {
+          bat "docker run -d -p 80:80 --name ${CONTAINER_NAME} ${IMAGE_NAME}"
+        }
+      }
+    }
+  }
+
+  post {
+    success {
+      echo "✅ Deployed Successfully!"
+    }
+    failure {
+      echo "❌ Build or deployment failed. Check the logs for details."
+    }
+  }
 }
